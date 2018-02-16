@@ -21,10 +21,11 @@ function createWindow () {
   console.log(require.resolve('electron'))
   // and load the index.html of the app.
   mainWindow.loadURL(url.format({
-    pathname: path.join(__dirname, 'index.html'),
+    //pathname: path.join(__dirname, 'index.html'),
+    pathname: path.join(__dirname, '/views/md/test.html'),
     protocol: 'file:',
     slashes: true
-  }))
+  })) 
 
   // Open the DevTools.
    mainWindow.webContents.openDevTools()

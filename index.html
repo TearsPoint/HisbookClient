@@ -35,8 +35,10 @@
 
       fs.readFile( "table.md" , 'utf8', function (err, data) {
         console.log(err); 
-        console.log(data);
+        //console.log(data);
         holder.text(data);
+
+        
       });
 
       holder.on("dragover", function () {
