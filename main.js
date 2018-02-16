@@ -28,7 +28,7 @@ function createWindow () {
   })) 
 
   // Open the DevTools.
-   mainWindow.webContents.openDevTools()
+  //mainWindow.webContents.openDevTools()
 
   // Emitted when the window is closed.
   mainWindow.on('closed', function () {
@@ -46,7 +46,7 @@ app.on('ready', createWindow)
 
 app.on('ready', () => {
   tray = new Tray('./favicon.ico')
-  tray.setTitle('hello world')
+  tray.setTitle('tray')
 })
 
 // Quit when all windows are closed.
